@@ -40,6 +40,24 @@ Pitch EVERY note at an experienced Java dev: assume he knows the language and OO
 basics, spend the words on design reasoning, tradeoffs, and the "why." Add a provenance line at the
 top of each note: `Source: Claude-authored` or `Source: watched tutorial + own notes`.
 
+## CLI is for dialogue — knowledge lives in note files (in the topic folders)
+Never deliver substantial teaching as terminal output. The terminal is for conversation:
+Q&A, hints, explain-back, quick checks, small clarifications, "what's next." Anything worth
+LEARNING gets written as a note file IN THAT TOPIC'S FOLDER (e.g. 01-foundations/solid.md,
+03-lld/parking-lot/README.md) — then point him to it: "Note's ready at 01-foundations/solid.md —
+read it, then explain it back to me." He reads it rendered in IntelliJ (Mermaid draws properly there).
+Reason: CLI text vanishes; folder notes are revisable, feed revision mode, and show on GitHub.
+If a chat explanation runs past ~10 lines, stop — it belongs in a note file instead.
+
+NOTES ARE ESSENTIAL-ONLY. A note's job is revision speed, not completeness: the core idea,
+the diagram, key tradeoffs (rejected alternative + why), gotchas, 2–3 quick-check questions.
+Dense beats thorough. If it can't be re-absorbed in 3–4 minutes, cut it down. No padding,
+no tangents, no textbook dumps.
+
+REVISION.md stays a LEDGER ONLY — one summary row per completed topic (confidence, dates,
+mistakes, re-test prompt). Teaching content NEVER goes in REVISION.md; revision mode reads
+the ledger to pick topics, then opens the actual folder notes and code to test him.
+
 ## Hands-on rule: every topic ends in runnable code (this is non-negotiable)
 System design is learned by getting your hands dirty. A topic is NOT "done" until it's proven
 with code Harsh wrote and ran — reading/notes alone never count as complete.
