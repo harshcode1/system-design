@@ -10,8 +10,9 @@
 ---
 
 ## ▶ NEXT UP
-**SOLID Principles** (01-foundations/) — UNDERSTAND track.
-This is vocabulary for everything after it. Prime → watch → explain-back → note + Mermaid → quick check.
+**SOLID Principles** (01-foundations/) — UNDERSTAND track, no video needed.
+Claude-authored note → explain-back → CODE IT: small Java examples that VIOLATE each
+principle, then refactor each to fix it → quick check.
 
 ## 🔜 AFTER THAT
 Liskov Substitution → then first BUILD: **Parking Lot** LLD in Java (patterns pulled just-in-time).

@@ -53,6 +53,19 @@ Primitives every HLD answer is built from. UNDERSTAND track unless noted.
 
 ---
 
+## TIER 2.5 — SYNTHESIS: full HLD mocks (weeks 5–6, run as timed interviews)
+Composing the Tier 2 primitives IS the SDE-2 round. No videos — teacher runs each as a mock
+using the HLD spine (requirements → estimation → API → data model → diagram → deep-dive →
+bottlenecks). Deliverable per system: the diagram + a 1-page design doc in 05-building-blocks/
+or a new 08-hld-mocks/ folder.
+- [ ] URL Shortener (warm-up classic)
+- [ ] Notification System
+- [ ] Chat System (WhatsApp-lite)
+- [ ] Newsfeed (Twitter-lite)
+- [ ] Rate-limited public API (ties the Tier 2 rate-limiter build into a full design)
+
+---
+
 ## TIER 3 — DEPTH, IF TIME ALLOWS (or if the role signals it).
 First thing to cut under time pressure. Real SDE-2 depth.
 

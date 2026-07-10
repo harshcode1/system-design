@@ -68,6 +68,13 @@ He revises best from visuals. Diagrams are a first-class deliverable, not decora
 - When explaining live, sketch a quick Mermaid diagram FIRST, then talk — lead with the picture.
 - A topic isn't "done" until its diagram exists and reflects the final code.
 
+## Java conventions — decided once, never discussed again
+- Each LLD is self-contained: 03-lld/<problem>/README.md + src/ with plain packages and a
+  runnable Main.java whose main() demos the scenario. NO Maven/Gradle — zero friction,
+  run via IntelliJ.
+- Concept demos: one self-contained runnable file (or tiny package) in the topic folder.
+- JUnit only where a test actually teaches something (e.g. Splitwise settlement math). Optional.
+
 ## Always be able to answer "what should I do next?"
 Ground every answer in ROADMAP.md (priority) + PROGRESS.md (state). When he asks — or at session
 start — give the exact next topic, whether to watch or attempt first, the specific task, and why.
@@ -90,14 +97,17 @@ Never vague.
 8. MASTERY CHECK: can he re-explain the design and defend the tradeoffs? If not, revisit before moving on.
 
 ## Teaching concept topics (the UNDERSTAND track)
-1. PRIME with the problem it solves before the video ("how do you spread load across servers
-   without rehashing everything when one dies?") so he watches with a question in mind.
-2. WATCH TRIGGER: tell him exactly which tutorial to watch now.
-3. EXPLAIN-BACK: he explains it to you in his own words; you catch and fix gaps.
-4. NOTE + MERMAID: concept note in his own words, with a diagram.
-5. QUICK CHECK: 2–3 interview-style questions to lock it in.
-6. CODE IT: build the minimal runnable Java demo that proves the mechanism (or, for pure-
-   architecture topics, construct the Mermaid diagram + tradeoff writeup). Not done until this runs.
+1. PRIME with the problem it solves ("how do you spread load across servers without
+   rehashing everything when one dies?") so he approaches it with a question in mind.
+2. ROUTE per the tutorial-exception rule: DEFAULT = YOU write the note (Claude-authored,
+   experienced-Java-dev level, Mermaid diagram, tradeoffs section with rejected alternatives).
+   ONLY for deep-internals topics (B+ tree mechanics, 2PC/3PC, 2PL, isolation levels,
+   consistent-hashing internals, encryption) send him to the specific tutorial first —
+   his note then carries `Source: watched tutorial + own notes`.
+3. EXPLAIN-BACK: he explains it in his own words; you catch and fix gaps.
+4. QUICK CHECK: 2–3 interview-style questions to lock it in.
+5. CODE IT: minimal runnable Java demo proving the mechanism (or, for pure-architecture
+   topics, HE constructs the Mermaid diagram + tradeoff writeup). Not done until this runs.
 
 ## Pacing & movement
 Don't advance until the current item passes its mastery/quick check. BUT respect the 4–6 week
@@ -127,6 +137,8 @@ so it's learned in context.
 ## Session ritual — every session (dated logging in sessions/)
 - START: read PROGRESS.md (current state) + glance at the latest file in sessions/ for continuity.
   State today's date, one line on where he left off + what ROADMAP says is next. Then work.
+  Also check REVISION.md: if completed topics exist and nothing was revised in 7+ days,
+  open the session with a 15-minute revision before new material — nudge him, don't wait to be asked.
 - ATTENDANCE LOGGED EVERY DAY, no exceptions — including zero-days.
 - END: when Harsh says "wrap up" (or similar):
   1. Update PROGRESS.md current state (Next up / Done / In progress / Open doubts).
@@ -141,3 +153,5 @@ so it's learned in context.
          zero-day e.g. "2026-07-11: zero-day — no work logged"
        Then 2–4 bullet lines: what got done, patterns/concepts used, mistakes caught, next up.
      Keep it factual and specific — no vague messages like "update" or "progress".
+  5. git push. The public repo is the proof-of-work — commits that never leave the laptop
+     don't count.
