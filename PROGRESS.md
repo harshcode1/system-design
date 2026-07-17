@@ -14,7 +14,7 @@
 Still owes the CODE IT step: small Java examples that VIOLATE each principle (S/O/L/I/D),
 then refactor each to fix it. Do this first before moving on — topic isn't done without code.
 Also answer the 3 quick-check questions at the bottom of the note (esp. #3 — tie an LSP
-violation to BetterMind/TaskForge/Phoenix OS).
+violation to BetterMind/TaskForge/Phoenix OS). (2026-07-14: zero-day, still pending.)
 
 ## 🔜 AFTER THAT
 Liskov Substitution (deeper pass) → then first BUILD: **Parking Lot** LLD in Java (patterns
@@ -34,4 +34,4 @@ _(none yet)_
 ## 📝 SESSIONS
 Full dated log lives in sessions/ — one file per month (sessions/YYYY-MM.md), dated entries,
 zero-days included. Keeps this file lean.
-Most recent session: 2026-07-13
+Most recent session: 2026-07-14
